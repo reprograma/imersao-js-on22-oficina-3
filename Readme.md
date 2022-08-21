@@ -6,7 +6,7 @@
 
 ## Pré-Requisitos
   - Visual Studio Code
-  - Node.js ^14.15.x
+  - Node.js ^npv 14.15.x
   - Jest ^28.x.x
 
 ## Instalar dependências
