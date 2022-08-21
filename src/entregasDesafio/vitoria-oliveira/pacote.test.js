@@ -1,12 +1,19 @@
 const { calcularPacote } = require('../../dominio/calculadora/Projeto/pacote');
 
 describe('calcular pacote', () => {
-    test('calcular o pacote dado um total de hora por projeto', () => {
-        const totalHorasProjeto = 60;
+    test('calcular o nível de pacote de acordo com o número de horas máximas trabalhadas', () => {
+
+        const totalHorasProjeto = 200;
 
         const result = calcularPacote(totalHorasProjeto);
 
-        expect(result).toEqual('pacote_intermediario');
+        if(totalHorasProjeto <= 50) {
+            expect(result).toEqual('pacote_basico');
+        } else if(totalHorasProjeto <= 100) {
+            expect(result).toEqual('pacote_intermediario');
+        } else if(totalHorasProjeto <= 200) {
+            expect(result).toEqual('pacote_premium');
+        }
 
     })
 })
