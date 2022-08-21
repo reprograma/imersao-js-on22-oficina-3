@@ -5,7 +5,14 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
+  "scripts": {
+    "test": "jest"
+  },
   "license": "ISC",
   "dependencies": {
+    "node": "14.15"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
   }
 }
