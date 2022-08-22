@@ -13,7 +13,7 @@ const calcularValorTotalProjeto = (funcionalidades, valorHora) => {
 
   const valorBase = calcularValorBaseProjeto(totalDeHorasPorProjeto, valorHora);
 
-  return Math.round(valorBase * TAXAS_CONTRATUAIS_POR_PACOTE[pacote]);
+  return Math.round(valorBase * TAXAS_CONTRATUAIS_POR_PACOTE[pacote]); //math.round arredonda pro valor mais próximo
 }
 
 exports.calcularValorTotalProjeto = calcularValorTotalProjeto;
